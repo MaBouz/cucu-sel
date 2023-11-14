@@ -31,7 +31,7 @@ public class Stepdefinition {
 		 FirefoxOptions firefoxOptions = new FirefoxOptions();
 		 firefoxOptions.setBinary(firefoxBinary);
 		 FirefoxDriver driver = new FirefoxDriver(firefoxOptions);
-		driver.get("https://www.google.fr/");
+		driver.get("https://google.com");
 	}
 
 	@When("I lookup the word {string}")
