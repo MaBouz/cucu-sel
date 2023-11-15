@@ -40,7 +40,7 @@ public class Stepdefinition {
 		//driver.findElement(By.className("q")).clear();
 		//driver.findElement(By.className("q")).sendKeys(string);
 		//driver.findElement(By.className("btnK")).click();
-		//driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		 driver.findElement(By.name("q")).clear();
 		    driver.findElement(By.name("q")).sendKeys(string);
 		    driver.findElement(By.name("btnK")).click();
