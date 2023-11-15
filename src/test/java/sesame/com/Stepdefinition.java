@@ -34,7 +34,7 @@ public class Stepdefinition {
 		driver.get("https://google.com");
 	}
 
-	@When("^I lookup the word {string}")
+	@When("^I lookup the word \"([^\"]*)\"$")
 	public void i_lookup_the_word(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		//driver.findElement(By.className("q")).clear();
@@ -49,7 +49,7 @@ public class Stepdefinition {
 
 	}
 
-	@Then("Search results display the word {string}")
+	@Then("^Search results display the word \"([^\"]*)\"$")
 	public void search_results_display_the_word(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println(driver.getTitle().contains(string));
