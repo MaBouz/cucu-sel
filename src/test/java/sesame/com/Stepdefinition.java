@@ -21,7 +21,7 @@ import io.cucumber.java.en.When;
 public class Stepdefinition {
     public WebDriver driver;
 
-	@Given("I open google search page")
+	@Given("^I open google search page$")
 	public void i_open_google_search_page() {
 	    // Write code here that turns the phrase above into concrete actions
 		FirefoxBinary firefoxBinary = new FirefoxBinary();
@@ -34,7 +34,7 @@ public class Stepdefinition {
 		driver.get("https://google.com");
 	}
 
-	@When("I lookup the word {string}")
+	@When("^I lookup the word {string}")
 	public void i_lookup_the_word(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		//driver.findElement(By.className("q")).clear();
